@@ -7,7 +7,7 @@ const BookPage = () => {
   const { cart, setCart } = useContext(CartContext);
 
   useEffect(() => {
-    fetch(`https://book-l7ss.onrender.com/${id}`)
+    fetch(`https://book-l7ss.onrender.com/book/${id}`)
       .then((res) => res.json())
       .then((data) => setBook(data));
   }, [id]);
