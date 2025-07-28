@@ -8,7 +8,7 @@ export const SearchProvider = ({ children }) => {
   const [book, setBook] = useState([]);
 
   useEffect(() => {
-    fetch(`http://localhost:8000/books`)
+    fetch(`https://book-l7ss.onrender.com/book`)
       .then((res) => res.json())
       .then((data) => setBook(data))
       .catch((err) => console.log(err));
